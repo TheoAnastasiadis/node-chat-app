@@ -8,7 +8,20 @@
 
 </head>
 <body>
-    <p>Culpa velit commodo enim minim dolor irure officia aliquip cupidatat aliquip in. Nisi sunt dolore esse deserunt qui qui minim minim esse ipsum sunt proident. Tempor sunt ipsum do est anim sunt labore est et quis excepteur adipisicing amet. Voluptate culpa ullamco tempor in voluptate. Voluptate velit laboris qui occaecat tempor esse dolor occaecat non commodo irure duis veniam officia. Consectetur qui adipisicing sunt in. Ea anim do in aliquip Lorem eu officia ex sint tempor non.</p>
-    
+    <h1>Welcome to the chat app!</h1>
+    <p>Sit ullamco nostrud duis duis ad tempor ex sit consectetur ullamco. Deserunt incididunt labore velit enim duis labore cupidatat fugiat magna eiusmod veniam. Ex excepteur nulla non sunt magna. Lorem anim aute minim occaecat duis laborum tempor quis aliqua tempor elit do. Ut voluptate dolor proident enim commodo do incididunt nisi laboris irure occaecat non minim. Duis non qui adipisicing reprehenderit sunt do nisi dolor ea.</p>   
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+
+        socket.on('connect', () => {
+            console.log('Connected to server!')
+        })
+
+        socket.on('disconnect', () => {
+            console.log('Disconected from server!')
+        })
+    </script>
 </body>
 </html>
